@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .line {
+        width: 100%;
+        height: 1px;
+        border: none;
+        background-color: none;
+    }
+    span {
+        width: 100px;
+        float: left;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .btn {
+        width: 240px;
+        height: 40px;
+        margin: 0  0.8% 0 0;
+    }
+    body {
+        padding: 3% 5%;
+    }
+    label {
+        margin: 0 0.5% 0 0;
+    }
+    #mesg{
+        margin: 5% 0 0 0;
+        font-size: 24px;
+    }
+</style>
+<body>
+    <form>
+        <h1>Gender:</h1>
+        <span> 性別</span>
+        <input type="radio" name="gender" value="2" id="girl" checked/>女孩
+        <input type="radio" name="gender" value="1" id="boy" />男孩<br>
+        <br>
+        <br>
+        <h1>Area:</h1>
+        <hr class="line">
+        <span> 北臺灣</span>
+        <input type="radio" name="area" value="A" id="a" checked /><label for="a">臺北市</label>
+        <input type="radio" name="area" value="F" id="f" /><label for="f">新北市</label>
+        <input type="radio" name="area" value="C" id="c" /><label for="c">基隆市</label>
+        <input type="radio" name="area" value="H" id="h" /><label for="h">桃園市</label>
+        <input type="radio" name="area" value="O" id="o" /><label for="o">新竹市</label>
+        <input type="radio" name="area" value="J" id="j" /><label for="j">新竹縣</label>
+        <input type="radio" name="area" value="G" id="g" /><label for="g">宜蘭縣</label><br>
+        <hr class="line">
+        <span>中臺灣</span>
+        <input type="radio" name="area" value="K" id="k" /><label for="k">苗栗縣</label>
+        <input type="radio" name="area" value="B" id="b" /><label for="b">臺中市</label>
+        <input type="radio" name="area" value="N" id="n" /><label for="n">彰化縣</label>
+        <input type="radio" name="area" value="M" id="m" /><label for="m">南投縣</label>
+        <input type="radio" name="area" value="P" id="p" /><label for="p">雲林縣</label><br>
+        <hr class="line">
+        <span>南臺灣</span>
+        <input type="radio" name="area" value="I" id="i" /><label for="i">嘉義市</label>
+        <input type="radio" name="area" value="Q" id="q" /><label for="q">嘉義縣</label>
+        <input type="radio" name="area" value="D" id="d" /><label for="d">臺南市</label>
+        <input type="radio" name="area" value="E" id="e" /><label for="e">高雄市</label>
+        <input type="radio" name="area" value="T" id="t" /><label for="t">屏東縣</label>
+        <input type="radio" name="area" value="X" id="x" /><label for="x">澎湖縣</label><br>
+        <hr class="line">
+        <span>東臺灣</span>
+        <input type="radio" name="area" value="U" id="u" /><label for="u">花蓮縣</label>
+        <input type="radio" name="area" value="V" id="v" /><label for="v">台東縣</label><br>
+        <hr class="line">
+        <span> 臺灣外島</span>
+        <input type="radio" name="area" value="W" id="w" /><label for="w">金門縣</label>
+        <input type="radio" name="area" value="Z" id="z" /><label for="z">連江縣</label><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="button" value="我懶得選!" onclick="creatTWID()" class="btn">
+        <input type="button" value="男女有別!" onclick="creatTWIDByGender()" class="btn">
+        <input type="button" value="我住哪裡?" onclick="creatTWIDByArea()" class="btn">
+        <input type="button" value="聽我的就對了!" onclick="creatTWIDByAll()" class="btn">
+
+
+    </form>
+<span id="mesg"></span>
+    <script src="work_test30_tool.js"></script>
+
+</body>
+
+</html>
